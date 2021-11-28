@@ -1,0 +1,35 @@
+.buttonSigin{
+    height: 3rem;
+    padding: 0rem 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-700);
+    color: var(--white);
+    font-weight: bold;
+
+    svg:first-child{
+        font-size: 1.5rem;
+        color: var(--yellow-500);
+    }
+    span{
+        padding: 1rem;
+    }
+    transition: filter 0.5s;
+    &:hover{
+        filter: brightness(0.8);
+    }
+    .logged{
+        color: var(--green-500);
+    }
+    .close{
+        color: var(--gray-300);
+        margin-left: 1rem;
+        transition: filter 0.2s;
+    }
+    .close:hover{
+        filter: brightness(0.8);
+    }
+
+}
