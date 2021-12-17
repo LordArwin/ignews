@@ -11,7 +11,7 @@
 
     svg:first-child{
         font-size: 1.5rem;
-        color: var(--yellow-500);
+        
     }
     span{
         padding: 1rem;
@@ -19,6 +19,9 @@
     transition: filter 0.5s;
     &:hover{
         filter: brightness(0.8);
+    }
+    .offline{
+        color: var(--yellow-500);
     }
     .logged{
         color: var(--green-500);
