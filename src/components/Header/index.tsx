@@ -1,5 +1,7 @@
 import { SiginButton } from "../SinginButton";
 import style from './styles.module.scss'
+import Link from 'next/link'
+import { ActiveLink } from "../ActiveLink";
 export function Header(){
     return (
         <header className={style.container}>
@@ -10,10 +12,10 @@ export function Header(){
 
                 <ul>
                     <li > 
-                        <a className={style.active}>Home</a>
+                        <ActiveLink  href='/' linkName = 'Home'/>
                     </li>
                     <li>
-                        <a>Posts</a>
+                        <ActiveLink href='/posts' linkName = 'Posts'/>
                     </li>
                 </ul>
                 </nav>
